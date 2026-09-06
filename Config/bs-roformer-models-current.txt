@@ -1,0 +1,39 @@
+﻿Name                                                                 Category      Checkpoint
+---------------------------------------------------------------------------------------------
+Roformer Model: BS Roformer SW by jarredou                           multi-stem    BS-Rofo-SW-Fixed.ckpt
+Roformer Model: BS Roformer | Chorus Male-Female by Sucial           vocals        model_chorus_bs_roformer_ep_267_sdr_24.1275.ckpt
+Roformer Model: BS Roformer | De-Reverb by anvuew SDR 22.5050        dereverb      dereverb_bs_roformer_anvuew_sdr_22.5050.ckpt
+Roformer Model: BS Roformer | FNO Instrumental by pcunwa             instrumental  bs_roformer_fno.ckpt
+Roformer Model: BS Roformer | HyperACE v1 Instrumental by pcunwa     instrumental  bs_hyperace.ckpt
+Roformer Model: BS Roformer | HyperACE v2 Instrumental by pcunwa     instrumental  bs_roformer_inst_hyperacev2.ckpt
+Roformer Model: BS Roformer | HyperACE v2 Vocals by pcunwa           vocals        bs_roformer_voc_hyperacev2.ckpt
+Roformer Model: BS Roformer | Instrumental Resurrection by unwa      instrumental  bs_roformer_instrumental_resurrection_unwa.ckpt
+Roformer Model: BS Roformer | Karaoke by anvuew                      karaoke       karaoke_bs_roformer_anvuew.ckpt
+Roformer Model: BS Roformer | Karaoke by becruily                    karaoke       bs_roformer_karaoke_frazer_becruily.ckpt
+Roformer Model: BS Roformer | Large-Inst by pcunwa                   instrumental  bs_large_v2_inst.ckpt
+Roformer Model: BS Roformer | Leap Instrumental by pcunwa            instrumental  bs_roformer_leap_inst.ckpt
+Roformer Model: BS Roformer | Leap Vocals by pcunwa                  vocals        bs_roformer_leap_voc.ckpt
+Roformer Model: BS Roformer | Leap Xe Instrumental by pcunwa         instrumental  bs_leap_xe_inst.ckpt
+Roformer Model: BS Roformer | Leap Xe Vocals by pcunwa               vocals        bs_leap_xe_voc.ckpt
+Roformer Model: BS Roformer | MAG Vocals by anvuew                   vocals        bs_roformer_mag_anvuew.ckpt
+Roformer Model: BS Roformer | MUSDB18HQ by ZFTurbo                   four-stem     model_bs_roformer_ep_17_sdr_9.6568.ckpt
+Roformer Model: BS Roformer | MVSep Mega 53 Stems by ZFTurbo         mega-stem     mvsep_mega_model_bs_roformer_53_stems_v1.ckpt
+Roformer Model: BS Roformer | Male-Female by aufr33                  vocals        bs_roformer_male_female_by_aufr33_sdr_7.2889.ckpt
+Roformer Model: BS Roformer | Resurrection Instrumental by pcunwa    instrumental  BS-Roformer-Resurrection-Inst.ckpt
+Roformer Model: BS Roformer | Resurrection Vocals by pcunwa          vocals        BS-Roformer-Resurrection.ckpt
+Roformer Model: BS Roformer | Revive V2 by pcunwa                    vocals        bs_roformer_revive2.ckpt
+Roformer Model: BS Roformer | Revive V3e by pcunwa                   vocals        bs_roformer_revive3e.ckpt
+Roformer Model: BS Roformer | Revive by pcunwa                       vocals        bs_roformer_revive.ckpt
+Roformer Model: BS Roformer | Siamese Vocals by pcunwa               vocals        bs_exp_siameseroformer.ckpt
+Roformer Model: BS Roformer | Value Residual Instrumental by pcunwa  instrumental  BS_Inst_EXP_VRL.ckpt
+Roformer Model: BS Roformer | Vocals FT1 by anvuew                   vocals        bs_roformer_ft1_anvuew_sdr_12.55.ckpt
+Roformer Model: BS Roformer | Vocals Resurrection by unwa            vocals        bs_roformer_vocals_resurrection_unwa.ckpt
+Roformer Model: BS Roformer | Vocals Revive V2 by Unwa               vocals        bs_roformer_vocals_revive_v2_unwa.ckpt
+Roformer Model: BS Roformer | Vocals Revive V3e by Unwa              vocals        bs_roformer_vocals_revive_v3e_unwa.ckpt
+Roformer Model: BS Roformer | Vocals Revive by Unwa                  vocals        bs_roformer_vocals_revive_unwa.ckpt
+Roformer Model: BS Roformer | Vocals by Gabox                        vocals        bs_roformer_vocals_gabox.ckpt
+Roformer Model: BS Roformer | Vocals by anvuew                       vocals        bs_roformer_anvuew_sdr_12.45.ckpt
+Roformer Model: BS-Roformer-De-Reverb                                dereverb      deverb_bs_roformer_8_384dim_10depth.ckpt
+
+Available categories: dereverb, four-stem, instrumental, karaoke, mega-stem, multi-stem, vocals
+

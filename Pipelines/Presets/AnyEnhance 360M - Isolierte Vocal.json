@@ -1,0 +1,52 @@
+{
+  "version": 1,
+  "name": "AnyEnhance 360M - Isolierte Vocal",
+  "stages": [
+    {
+      "id": "restoration",
+      "type": "restoration",
+      "input": "previous",
+      "output": "restoration_out",
+      "enabled": true,
+      "optional": false,
+      "engine": "ANYENHANCE",
+      "model": "anyenhance-360m-selfcritic-v2",
+      "parameters": {
+        "wet": 1.0,
+        "device": "cuda",
+        "timesteps": 20,
+        "seed": 42,
+        "prompt_path": ""
+      }
+    },
+    {
+      "id": "export",
+      "type": "export",
+      "input": "previous",
+      "output": "export_out",
+      "enabled": true,
+      "optional": false,
+      "parameters": {
+        "flac": false
+      },
+      "model": null,
+      "engine": "DSP"
+    }
+  ],
+  "info": {
+    "de": {
+      "short": "KI-Rekonstruktion für eine trockenere Stimme.",
+      "description": "Stimme mit KI rekonstruieren (100%) → Als WAV exportieren. Rekonstruktion kann Klangfarbe und Details verändern; das Ergebnis ist mono.",
+      "use_case": "Bereits isolierte Vocals",
+      "intensity": "Stark",
+      "models": 1
+    },
+    "en": {
+      "short": "AI reconstruction for a drier voice.",
+      "description": "Reconstruct the voice with AI (100%) → Export WAV. Reconstruction may change timbre and details; output is mono.",
+      "use_case": "Isolated vocals",
+      "intensity": "Strong",
+      "models": 1
+    }
+  }
+}

@@ -1,0 +1,120 @@
+﻿Name                                                                        Category      Checkpoint
+----------------------------------------------------------------------------------------------------
+MelBand Roformer Big Beta 1 (pcunwa)                                        vocals        melband_roformer_big_beta1.ckpt
+MelBand Roformer Big Beta 2 (pcunwa)                                        vocals        melband_roformer_big_beta2.ckpt
+MelBand Roformer Big Beta 3 (pcunwa)                                        vocals        melband_roformer_big_beta3.ckpt
+MelBand Roformer Big Beta 4 (pcunwa)                                        vocals        melband_roformer_big_beta4.ckpt
+MelBand Roformer Big Beta 5e (by unwa)                                      vocals        big_beta5e.ckpt
+MelBand Roformer Big Beta 5e (pcunwa)                                       vocals        big_beta5e.ckpt
+MelBand Roformer Big Beta 6 (by unwa)                                       vocals        big_beta6.ckpt
+MelBand Roformer Big Beta 6 (pcunwa)                                        vocals        big_beta6.ckpt
+MelBand Roformer Big Beta 6x (pcunwa)                                       vocals        big_beta6x.ckpt
+MelBand Roformer Big Beta 7 (by unwa)                                       vocals        big_beta7.ckpt
+MelBand Roformer Denoise Debleed (Gabox)                                    denoise       denoisedebleed.ckpt
+MelBand Roformer Fullness Vocal Model                                       vocals        FullnessVocalModel.ckpt
+MelBand Roformer INSTV6 (Gabox)                                             instrumental  INSTV6.ckpt
+MelBand Roformer INSTV6N (Gabox)                                            instrumental  INSTV6N.ckpt
+MelBand Roformer INSTV7N (Gabox)                                            instrumental  INSTV7N.ckpt
+MelBand Roformer Inst FV8 (Gabox)                                           instrumental  inst_gaboxFv8.ckpt
+MelBand Roformer Inst FV8B (Gabox)                                          instrumental  inst_gaboxFv8B.ckpt
+MelBand Roformer Inst Gabox FVX                                             instrumental  Inst_GaboxFVX.ckpt
+MelBand Roformer Inst Gabox V7                                              instrumental  Inst_GaboxV7.ckpt
+MelBand Roformer Instrumental Gabox Bv2                                     instrumental  inst_gaboxBv2.ckpt
+MelBand Roformer Instrumental Gabox Bv3                                     instrumental  inst_gaboxBv3.ckpt
+MelBand Roformer Instrumental Gabox Fv3                                     instrumental  inst_gaboxFv3.ckpt
+MelBand Roformer Instrumental Gabox V3                                      instrumental  inst_gabox3.ckpt
+MelBand Roformer Instrumental V1 (pcunwa)                                   instrumental  melband_roformer_inst_v1.ckpt
+MelBand Roformer Instrumental V1 Plus Test (pcunwa)                         instrumental  inst_v1_plus_test.ckpt
+MelBand Roformer Instrumental V1e (pcunwa)                                  instrumental  inst_v1e.ckpt
+MelBand Roformer Instrumental V1e Plus (pcunwa)                             instrumental  inst_v1e_plus.ckpt
+MelBand Roformer Karaoke (Gabox experimental)                               karaoke       KaraokeGabox.ckpt
+MelBand Roformer Kim FT (by unwa)                                           vocals        kimmel_unwa_ft.ckpt
+MelBand Roformer Kim FT (pcunwa)                                            vocals        kimmel_unwa_ft.ckpt
+MelBand Roformer Kim FT2 (by unwa)                                          vocals        kimmel_unwa_ft2.ckpt
+MelBand Roformer Kim FT2 (pcunwa)                                           vocals        kimmel_unwa_ft2.ckpt
+MelBand Roformer Kim FT2 Bleedless (by unwa)                                vocals        kimmel_unwa_ft2_bleedless.ckpt
+MelBand Roformer Kim FT2 Bleedless (pcunwa)                                 vocals        kimmel_unwa_ft2_bleedless.ckpt
+MelBand Roformer Kim FT3 Previous (pcunwa)                                  vocals        kimmel_unwa_ft3_prev.ckpt
+MelBand Roformer Kim | Vocals (Kimberley Jensen)                            vocals        MelBandRoformer.ckpt
+MelBand Roformer Small V1 (pcunwa)                                          vocals        melband_roformer_small_v1.ckpt
+MelBand Roformer Vocals Fv3 (Gabox)                                         vocals        voc_Fv3.ckpt
+MelBand Roformer Vocals Fv4 (Gabox)                                         vocals        voc_fv4.ckpt
+MelBand Roformer Vocals Gabox Fv1                                           vocals        voc_gaboxFv1.ckpt
+MelBand Roformer Vocals Gabox Fv2                                           vocals        voc_gaboxFv2.ckpt
+Roformer Model: Mel-Roformer-Crowd-Aufr33-Viperx                            crowd         mel_band_roformer_crowd_aufr33_viperx_sdr_8.7144.ckpt
+Roformer Model: Mel-Roformer-Denoise-Aufr33                                 denoise       denoise_mel_band_roformer_aufr33_sdr_27.9959.ckpt
+Roformer Model: Mel-Roformer-Denoise-Aufr33-Aggr                            denoise       denoise_mel_band_roformer_aufr33_aggr_sdr_27.9768.ckpt
+Roformer Model: Mel-Roformer-Karaoke-Aufr33-Viperx                          karaoke       mel_band_roformer_karaoke_aufr33_viperx_sdr_10.1956.ckpt
+Roformer Model: Mel-Roformer-Viperx-1143                                    vocals        model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt
+Roformer Model: MelBand Roformer Kim | Big Beta 4 FT by unwa                general       melband_roformer_big_beta4.ckpt
+Roformer Model: MelBand Roformer Kim | Big Beta 5e FT by unwa               general       melband_roformer_big_beta5e.ckpt
+Roformer Model: MelBand Roformer Kim | Big SYHFT V1 by SYH99999             general       MelBandRoformerBigSYHFTV1.ckpt
+Roformer Model: MelBand Roformer Kim | FT 2 Bleedless by unwa               denoise       mel_band_roformer_kim_ft2_bleedless_unwa.ckpt
+Roformer Model: MelBand Roformer Kim | FT 2 by unwa                         general       mel_band_roformer_kim_ft2_unwa.ckpt
+Roformer Model: MelBand Roformer Kim | FT 3 by unwa                         general       mel_band_roformer_kim_ft3_unwa.ckpt
+Roformer Model: MelBand Roformer Kim | FT by unwa                           general       mel_band_roformer_kim_ft_unwa.ckpt
+Roformer Model: MelBand Roformer Kim | Inst V1 (E) Plus by Unwa             instrumental  melband_roformer_inst_v1e_plus.ckpt
+Roformer Model: MelBand Roformer Kim | Inst V1 (E) by Unwa                  instrumental  melband_roformer_inst_v1e.ckpt
+Roformer Model: MelBand Roformer Kim | Inst V1 Plus by Unwa                 instrumental  melband_roformer_inst_v1_plus.ckpt
+Roformer Model: MelBand Roformer Kim | Inst V2 by Unwa                      instrumental  melband_roformer_inst_v2.ckpt
+Roformer Model: MelBand Roformer Kim | InstVoc Duality V1 by Unwa           instvoc       melband_roformer_instvoc_duality_v1.ckpt
+Roformer Model: MelBand Roformer Kim | InstVoc Duality V2 by Unwa           instvoc       melband_roformer_instvox_duality_v2.ckpt
+Roformer Model: MelBand Roformer Kim | SYHFT V2 by SYH99999                 general       MelBandRoformerSYHFTV2.ckpt
+Roformer Model: MelBand Roformer Kim | SYHFT V2.5 by SYH99999               general       MelBandRoformerSYHFTV2.5.ckpt
+Roformer Model: MelBand Roformer Kim | SYHFT V3 by SYH99999                 general       MelBandRoformerSYHFTV3Epsilon.ckpt
+Roformer Model: MelBand Roformer Kim | SYHFT by SYH99999                    general       MelBandRoformerSYHFT.ckpt
+Roformer Model: MelBand Roformer | Aspiration Less Aggressive by Sucial     aspiration    aspiration_mel_band_roformer_less_aggr_sdr_18.1201.ckpt
+Roformer Model: MelBand Roformer | Aspiration by Sucial                     aspiration    aspiration_mel_band_roformer_sdr_18.9845.ckpt
+Roformer Model: MelBand Roformer | Big Beta 6 by unwa                       general       melband_roformer_big_beta6.ckpt
+Roformer Model: MelBand Roformer | Big Beta 6X by unwa                      general       melband_roformer_big_beta6x.ckpt
+Roformer Model: MelBand Roformer | Bleed Suppressor V1 by unwa-97chris      denoise       mel_band_roformer_bleed_suppressor_v1.ckpt
+Roformer Model: MelBand Roformer | De-Reverb Big by Sucial                  dereverb      dereverb_big_mbr_ep_362.ckpt
+Roformer Model: MelBand Roformer | De-Reverb Less Aggressive by anvuew      dereverb      dereverb_mel_band_roformer_less_aggressive_anvuew_sdr_18.8050.ckpt
+Roformer Model: MelBand Roformer | De-Reverb Mono by anvuew                 dereverb      dereverb_mel_band_roformer_mono_anvuew_sdr_20.4029.ckpt
+Roformer Model: MelBand Roformer | De-Reverb Super Big by Sucial            dereverb      dereverb_super_big_mbr_ep_346.ckpt
+Roformer Model: MelBand Roformer | De-Reverb by anvuew                      dereverb      dereverb_mel_band_roformer_anvuew_sdr_19.1729.ckpt
+Roformer Model: MelBand Roformer | De-Reverb-Echo Fused by Sucial           dereverb      dereverb_echo_mbr_fused.ckpt
+Roformer Model: MelBand Roformer | De-Reverb-Echo V2 by Sucial              dereverb      dereverb_echo_mbr_v2_sdr_dry_13.4843.ckpt
+Roformer Model: MelBand Roformer | De-Reverb-Echo by Sucial                 dereverb      dereverb-echo_mel_band_roformer_sdr_10.0169.ckpt
+Roformer Model: MelBand Roformer | Denoise-Debleed by Gabox                 denoise       mel_band_roformer_denoise_debleed_gabox.ckpt
+Roformer Model: MelBand Roformer | Deux by becruily                         instvoc       becruily_deux.ckpt
+Roformer Model: MelBand Roformer | Guitar by becruily                       guitar        becruily_guitar.ckpt
+Roformer Model: MelBand Roformer | INSTV5 by Gabox                          instrumental  mel_band_roformer_instrumental_instv5_gabox.ckpt
+Roformer Model: MelBand Roformer | INSTV5N by Gabox                         instrumental  mel_band_roformer_instrumental_instv5n_gabox.ckpt
+Roformer Model: MelBand Roformer | INSTV6 by Gabox                          instrumental  mel_band_roformer_instrumental_instv6_gabox.ckpt
+Roformer Model: MelBand Roformer | INSTV6N by Gabox                         instrumental  mel_band_roformer_instrumental_instv6n_gabox.ckpt
+Roformer Model: MelBand Roformer | INSTV7 by Gabox                          instrumental  mel_band_roformer_instrumental_instv7_gabox.ckpt
+Roformer Model: MelBand Roformer | INSTV7N by Gabox                         instrumental  mel_band_roformer_instrumental_instv7n_gabox.ckpt
+Roformer Model: MelBand Roformer | INSTV8 by Gabox                          instrumental  mel_band_roformer_instrumental_instv8_gabox.ckpt
+Roformer Model: MelBand Roformer | INSTV8N by Gabox                         instrumental  mel_band_roformer_instrumental_instv8n_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental 2 by Gabox                  instrumental  mel_band_roformer_instrumental_2_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental 3 by Gabox                  instrumental  mel_band_roformer_instrumental_3_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental Bleedless V1 by Gabox       instrumental  mel_band_roformer_instrumental_bleedless_v1_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental Bleedless V2 by Gabox       instrumental  mel_band_roformer_instrumental_bleedless_v2_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental Bleedless V3 by Gabox       instrumental  mel_band_roformer_instrumental_bleedless_v3_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental FV7z by Gabox               instrumental  mel_band_roformer_instrumental_fv7z_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental FV8 by Gabox                instrumental  mel_band_roformer_instrumental_fv8_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental FVX by Gabox                instrumental  mel_band_roformer_instrumental_fvx_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental Fullness Noisy V4 by Gabox  instrumental  mel_band_roformer_instrumental_fullness_noise_v4_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental Fullness V1 by Gabox        instrumental  mel_band_roformer_instrumental_fullness_v1_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental Fullness V2 by Gabox        instrumental  mel_band_roformer_instrumental_fullness_v2_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental Fullness V3 by Gabox        instrumental  mel_band_roformer_instrumental_fullness_v3_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental by Gabox                    instrumental  mel_band_roformer_instrumental_gabox.ckpt
+Roformer Model: MelBand Roformer | Instrumental by becruily                 instrumental  mel_band_roformer_instrumental_becruily.ckpt
+Roformer Model: MelBand Roformer | Karaoke V2 by Gabox                      karaoke       mel_band_roformer_karaoke_gabox_v2.ckpt
+Roformer Model: MelBand Roformer | Karaoke by Gabox                         karaoke       mel_band_roformer_karaoke_gabox.ckpt
+Roformer Model: MelBand Roformer | Karaoke by becruily                      karaoke       mel_band_roformer_karaoke_becruily.ckpt
+Roformer Model: MelBand Roformer | Vocals FV1 by Gabox                      vocals        mel_band_roformer_vocals_fv1_gabox.ckpt
+Roformer Model: MelBand Roformer | Vocals FV2 by Gabox                      vocals        mel_band_roformer_vocals_fv2_gabox.ckpt
+Roformer Model: MelBand Roformer | Vocals FV3 by Gabox                      vocals        mel_band_roformer_vocals_fv3_gabox.ckpt
+Roformer Model: MelBand Roformer | Vocals FV4 by Gabox                      vocals        mel_band_roformer_vocals_fv4_gabox.ckpt
+Roformer Model: MelBand Roformer | Vocals FV5 by Gabox                      vocals        mel_band_roformer_vocals_fv5_gabox.ckpt
+Roformer Model: MelBand Roformer | Vocals FV6 by Gabox                      vocals        mel_band_roformer_vocals_fv6_gabox.ckpt
+Roformer Model: MelBand Roformer | Vocals Fullness by Aname                 vocals        mel_band_roformer_vocal_fullness_aname.ckpt
+Roformer Model: MelBand Roformer | Vocals V2 by Gabox                       vocals        mel_band_roformer_vocals_v2_gabox.ckpt
+Roformer Model: MelBand Roformer | Vocals by Gabox                          vocals        mel_band_roformer_vocals_gabox.ckpt
+Roformer Model: MelBand Roformer | Vocals by Kimberley Jensen               vocals        vocals_mel_band_roformer.ckpt
+Roformer Model: MelBand Roformer | Vocals by becruily                       vocals        mel_band_roformer_vocals_becruily.ckpt
+
+Available categories: aspiration, crowd, denoise, dereverb, general, guitar, instrumental, instvoc, karaoke, vocals
+

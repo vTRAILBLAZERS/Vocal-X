@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "name": "KI-Restaurierung - Experimentell",
+  "stages": [
+    {
+      "id": "vocal_separation",
+      "type": "vocal_separation",
+      "input": "previous",
+      "output": "vocal_separation_out",
+      "enabled": true,
+      "optional": false,
+      "parameters": {
+        "wet": 1.0,
+        "device": "cuda",
+        "stem": "vocals"
+      },
+      "model": "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+      "engine": "BS"
+    },
+    {
+      "id": "restoration",
+      "type": "restoration",
+      "input": "previous",
+      "output": "restoration_out",
+      "enabled": true,
+      "optional": false,
+      "engine": "ANYENHANCE",
+      "model": "anyenhance-v1-baseline",
+      "parameters": {
+        "wet": 1.0,
+        "device": "cuda",
+        "timesteps": 20,
+        "seed": 42
+      }
+    },
+    {
+      "id": "export",
+      "type": "export",
+      "input": "previous",
+      "output": "export_out",
+      "enabled": true,
+      "optional": false,
+      "parameters": {
+        "flac": false
+      },
+      "model": null,
+      "engine": "DSP"
+    }
+  ],
+  "info": {
+    "de": {
+      "short": "KI-Rekonstruktion für eine trockenere Stimme.",
+      "description": "Stimme vom Instrumental trennen (100%) → Stimme mit KI rekonstruieren (100%) → Als WAV exportieren. Rekonstruktion kann Klangfarbe und Details verändern; das Ergebnis ist mono.",
+      "use_case": "Komplette Songs / Remixe",
+      "intensity": "Stark",
+      "models": 2
+    },
+    "en": {
+      "short": "AI reconstruction for a drier voice.",
+      "description": "Separate vocals from the instrumental (100%) → Reconstruct the voice with AI (100%) → Export WAV. Reconstruction may change timbre and details; output is mono.",
+      "use_case": "Full songs / remixes",
+      "intensity": "Strong",
+      "models": 2
+    }
+  }
+}

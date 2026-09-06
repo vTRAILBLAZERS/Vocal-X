@@ -1,0 +1,62 @@
+﻿VOCAL AI 2026 - CORE MODEL PACK
+===============================
+
+PRIMARY VOCAL MODEL
+-------------------
+BS-RoFormer Leap Xe
+
+MODEL:
+roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa
+
+ROLE:
+Default high-quality vocal extraction
+
+
+BS-ROFORMER CANDIDATES
+----------------------
+
+Leap Xe Vocals
+Leap Vocals
+Resurrection Vocals
+Revive V3e Vocals
+
+
+MELBAND-ROFORMER CANDIDATES
+---------------------------
+
+Big Beta 7
+Deux by becruily
+Kim Vocals
+Viperx 1143
+
+
+POST PROCESSING
+---------------
+
+De-Reverb Super Big
+De-Reverb-Echo V2
+
+
+SMART MODE PLAN
+---------------
+
+1. Analyze track
+2. Select likely candidates
+3. Process short benchmark segments
+4. Measure vocal fullness
+5. Measure instrumental bleed
+6. Measure artifacts
+7. Measure vocal continuity
+8. Calculate score
+9. Recommend best model
+10. Process complete song
+
+
+MODEL PATHS
+-----------
+
+BS-RoFormer:
+D:\VOCAL AI 2026\Models\BS-RoFormer
+
+MelBand-RoFormer:
+D:\VOCAL AI 2026\Models\MelBand-RoFormer

@@ -1,0 +1,218 @@
+﻿# ============================================================
+# VOCAL X
+# GitHub source repository exclusions
+# ============================================================
+
+
+# ============================================================
+# CRITICAL: PRIVATE / LICENSE SECRETS
+# NEVER COMMIT
+# ============================================================
+
+/Private/
+
+*.dpapi
+*.pfx
+*.p12
+*.pem
+*.key
+
+*.vxlicense
+
+**/signing-key.*
+**/private-key.*
+**/serial-hashes.json
+
+**/*activation-token*
+**/*activation_token*
+**/*license-token*
+**/*license_token*
+
+.env
+.env.*
+secrets/
+Secrets/
+
+
+# ============================================================
+# PYTHON VIRTUAL ENVIRONMENTS
+# ============================================================
+
+/.venv/
+/.venv-anyenhance/
+/venv/
+/env/
+
+
+# ============================================================
+# PYTHON CACHE
+# ============================================================
+
+__pycache__/
+**/__pycache__/
+
+*.pyc
+*.pyo
+*.pyd
+
+.pytest_cache/
+.mypy_cache/
+
+
+# ============================================================
+# AI MODELS / WEIGHTS
+# Redistribution licenses must be checked first
+# ============================================================
+
+/Models/
+
+*.ckpt
+*.pth
+*.pt
+*.safetensors
+*.onnx
+
+
+# ============================================================
+# VOCAL X RUNTIME DATA
+# ============================================================
+
+/Cache/
+/Logs/
+/Output/
+/Preview/
+/Temp/
+/Input/
+/Session/
+
+/Processing/
+
+
+# ============================================================
+# LOCAL LICENSE STATE
+# Public license verification source remains in App/
+# ============================================================
+
+/License/
+
+
+# ============================================================
+# BACKUPS
+# ============================================================
+
+/Backups/
+
+/App/Backup-*/
+
+
+# ============================================================
+# THIRD-PARTY / VENDOR DEVELOPMENT TREES
+# Do not commit embedded repositories or model test assets
+# ============================================================
+
+/Tools/AnyEnhance-360M-Recovered/
+/Tools/AnyEnhance-Amphion/
+/Tools/AnyEnhance-v1/
+
+
+# ============================================================
+# BUILD / RELEASE ARTIFACTS
+# Release SOURCE and Documentation remain tracked
+# ============================================================
+
+/Release/Build/
+/Release/Dist/
+/Release/Installer/
+/Release/Installer-Output/
+
+/build/
+/dist/
+
+*.exe
+*.msi
+*.msix
+
+
+# ============================================================
+# AUDIO INPUT / TEST OUTPUT
+# Avoid accidentally committing copyrighted/user audio
+# ============================================================
+
+*.wav
+*.mp3
+*.flac
+*.aiff
+*.aif
+*.m4a
+*.aac
+*.ogg
+*.wma
+
+
+# ============================================================
+# GENERATED CONFIG / GUI STATE
+# Static model catalogs and source configuration stay trackable
+# ============================================================
+
+/Config/gui-queue.json
+/Config/gui-settings.json
+/Config/GUIRequests/
+
+/Config/*.stderr.txt
+/Config/*.stdout.txt
+/Config/*.log
+
+/Config/registry-diagnostic.json
+/Config/restoration-test-report.json
+/Config/core-model-download-report.json
+
+
+# ============================================================
+# TEMP / LOCK FILES
+# ============================================================
+
+*.tmp
+*.temp
+*.lock
+*.log
+
+
+# ============================================================
+# EDITOR / WINDOWS
+# ============================================================
+
+.vs/
+.vscode/
+.idea/
+
+Thumbs.db
+Desktop.ini
+
+
+# ============================================================
+# LOCAL BACKUP FILES
+# ============================================================
+
+*.bak
+
+
+# ============================================================
+# NOTE
+#
+# KEEP TRACKED:
+#
+# App/
+# Config/ static configuration
+# Pipelines/
+# Release/ source + documentation
+# Tools/LicenseAdmin/ source
+#
+# NEVER TRACK:
+#
+# Private/
+# Models/
+# virtual environments
+# user audio
+# runtime processing
+# private signing material
+# ============================================================

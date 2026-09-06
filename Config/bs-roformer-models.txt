@@ -1,0 +1,14 @@
+﻿Name                                                             Category      Checkpoint
+-----------------------------------------------------------------------------------------
+Roformer Model: BS Roformer SW by jarredou                       multi-stem    BS-Rofo-SW-Fixed.ckpt
+Roformer Model: BS Roformer | Chorus Male-Female by Sucial       vocals        model_chorus_bs_roformer_ep_267_sdr_24.1275.ckpt
+Roformer Model: BS Roformer | Instrumental Resurrection by unwa  instrumental  bs_roformer_instrumental_resurrection_unwa.ckpt
+Roformer Model: BS Roformer | Male-Female by aufr33              vocals        bs_roformer_male_female_by_aufr33_sdr_7.2889.ckpt
+Roformer Model: BS Roformer | Vocals Resurrection by unwa        vocals        bs_roformer_vocals_resurrection_unwa.ckpt
+Roformer Model: BS Roformer | Vocals Revive V2 by Unwa           vocals        bs_roformer_vocals_revive_v2_unwa.ckpt
+Roformer Model: BS Roformer | Vocals Revive V3e by Unwa          vocals        bs_roformer_vocals_revive_v3e_unwa.ckpt
+Roformer Model: BS Roformer | Vocals Revive by Unwa              vocals        bs_roformer_vocals_revive_unwa.ckpt
+Roformer Model: BS Roformer | Vocals by Gabox                    vocals        bs_roformer_vocals_gabox.ckpt
+Roformer Model: BS-Roformer-De-Reverb                            dereverb      deverb_bs_roformer_8_384dim_10depth.ckpt
+
+Available categories: dereverb, instrumental, multi-stem, vocals

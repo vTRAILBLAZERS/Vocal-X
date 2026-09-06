@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "name": "Natürlich",
+  "stages": [
+    {
+      "id": "vocal_separation",
+      "type": "vocal_separation",
+      "input": "previous",
+      "output": "vocal_separation_out",
+      "enabled": true,
+      "optional": false,
+      "parameters": {
+        "wet": 1.0,
+        "device": "cuda",
+        "stem": "vocals"
+      },
+      "model": "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+      "engine": "BS"
+    },
+    {
+      "id": "dereverb",
+      "type": "dereverb",
+      "input": "previous",
+      "output": "dereverb_out",
+      "enabled": false,
+      "optional": false,
+      "parameters": {
+        "wet": 0.25,
+        "device": "cuda",
+        "stem": "dry"
+      },
+      "model": "roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+      "engine": "MEL"
+    },
+    {
+      "id": "deecho",
+      "type": "deecho",
+      "input": "previous",
+      "output": "deecho_out",
+      "enabled": false,
+      "optional": false,
+      "parameters": {
+        "wet": 1.0,
+        "device": "cuda",
+        "stem": "dry"
+      },
+      "model": "roformer-model-melband-roformer-de-reverb-echo-v2-by-sucial",
+      "engine": "MEL"
+    },
+    {
+      "id": "deesser",
+      "type": "deesser",
+      "input": "previous",
+      "output": "deesser_out",
+      "enabled": false,
+      "optional": false,
+      "parameters": {
+        "frequency_hz": 6500,
+        "threshold_db": -24,
+        "max_reduction_db": 3
+      },
+      "model": null,
+      "engine": "DSP"
+    },
+    {
+      "id": "cleanup",
+      "type": "cleanup",
+      "input": "previous",
+      "output": "cleanup_out",
+      "enabled": false,
+      "optional": false,
+      "parameters": {
+        "highpass_hz": 65
+      },
+      "model": null,
+      "engine": "DSP"
+    },
+    {
+      "id": "restoration",
+      "type": "restoration",
+      "input": "previous",
+      "output": "restoration_out",
+      "enabled": false,
+      "optional": false,
+      "engine": "ANYENHANCE",
+      "model": "anyenhance-v1-baseline",
+      "parameters": {
+        "wet": 1.0,
+        "device": "cuda",
+        "timesteps": 20,
+        "seed": 42
+      }
+    },
+    {
+      "id": "export",
+      "type": "export",
+      "input": "previous",
+      "output": "export_out",
+      "enabled": true,
+      "optional": false,
+      "parameters": {
+        "flac": false
+      },
+      "model": null,
+      "engine": "DSP"
+    }
+  ],
+  "info": {
+    "de": {
+      "short": "Natürliche Vocal-Trennung ohne zusätzliche Reinigung.",
+      "description": "Stimme vom Instrumental trennen (100%) → Als WAV exportieren. Instrumentalreste können im Ergebnis verbleiben.",
+      "use_case": "Komplette Songs / Remixe",
+      "intensity": "Schonend",
+      "models": 1
+    },
+    "en": {
+      "short": "Natural vocal separation without extra cleanup.",
+      "description": "Separate vocals from the instrumental (100%) → Export WAV. Some instrumental bleed may remain.",
+      "use_case": "Full songs / remixes",
+      "intensity": "Gentle",
+      "models": 1
+    }
+  }
+}
