@@ -1,0 +1,491 @@
+{
+  "purpose": "permanently noncommercial, confirmed by owner 2026-09-06",
+  "mode": "planning only; no files copied",
+  "release_ready": false,
+  "files": [
+    {
+      "source": "App/diagnostic_ui.py",
+      "destination": "App/diagnostic_ui.py",
+      "bytes": 2267,
+      "sha256": "23264a1220c21f474591ee3a24b8515a13400e8573b9117652d06d0e4d1b7861"
+    },
+    {
+      "source": "App/diagnostics.py",
+      "destination": "App/diagnostics.py",
+      "bytes": 4514,
+      "sha256": "042c6e1a84915b945a93f9966983ce2ddb343413917c889b34732c1360a3187a"
+    },
+    {
+      "source": "App/gui_i18n.py",
+      "destination": "App/gui_i18n.py",
+      "bytes": 4923,
+      "sha256": "80bc45294565e2e496beac060e7db989d51a698d7766f0b0e2c01e05bb71437b"
+    },
+    {
+      "source": "App/gui_worker.py",
+      "destination": "App/gui_worker.py",
+      "bytes": 1318,
+      "sha256": "dc60262e9c583c26dd4ab4950bf9d3095a07e2121041fb6fd5b69aa21c17dd8f"
+    },
+    {
+      "source": "App/license_dialog.py",
+      "destination": "App/license_dialog.py",
+      "bytes": 4651,
+      "sha256": "a1c22d293aa62f0e97a1e4cca90bb7fb7a7174eef8d0084bf4febc393e42a0c9"
+    },
+    {
+      "source": "App/license_service.py",
+      "destination": "App/license_service.py",
+      "bytes": 1133,
+      "sha256": "933d9c6cc23408b91525f0a7eaee7a0d96b4f1a4bfe9470f9ea6053b3378170f"
+    },
+    {
+      "source": "App/pipeline.py",
+      "destination": "App/pipeline.py",
+      "bytes": 1902,
+      "sha256": "6f2f966acbb142890e8d7abb2b0d337c99ca1535b5e10605f11498940d1d442d"
+    },
+    {
+      "source": "App/preset_info.py",
+      "destination": "App/preset_info.py",
+      "bytes": 2603,
+      "sha256": "1da21256415f799c8f7cc5ba8f4d3fbe5c5af423002b9bd01c8fe16ebd97807e"
+    },
+    {
+      "source": "App/qol_audio.py",
+      "destination": "App/qol_audio.py",
+      "bytes": 9612,
+      "sha256": "18de871bad4532bd0b6e0e17061d62319133d6dd31be31f7e09e59b3324d58b2"
+    },
+    {
+      "source": "App/qol_window.py",
+      "destination": "App/qol_window.py",
+      "bytes": 42673,
+      "sha256": "41789e0befdab74b3eaa493d20eca1336a7069f57c29b8797a17fa85fc634cc4"
+    },
+    {
+      "source": "App/qol_windows.py",
+      "destination": "App/qol_windows.py",
+      "bytes": 1534,
+      "sha256": "9533ea4f7813fec82a256c24e8d5a95f23d47ec6c8b2a143d4d41dcf5b56c2ce"
+    },
+    {
+      "source": "App/vocal_gui.py",
+      "destination": "App/vocal_gui.py",
+      "bytes": 28139,
+      "sha256": "3bd1d687006769104e048ce7f3cd1b82214c2cbb1d9198dc24a31ec51dac4b4b"
+    },
+    {
+      "source": "App/vocal_license.py",
+      "destination": "App/vocal_license.py",
+      "bytes": 6837,
+      "sha256": "80390b511556240ab544e39e2f412acbe433b338b1dce43d7466b3c7cd0af255"
+    },
+    {
+      "source": "App/vocal_pipeline/__init__.py",
+      "destination": "App/vocal_pipeline/__init__.py",
+      "bytes": 23,
+      "sha256": "661cd029667c445ad32248fbcfcec1d78e0323de5ef0b31f039c3c3435900ed8"
+    },
+    {
+      "source": "App/vocal_pipeline/audio.py",
+      "destination": "App/vocal_pipeline/audio.py",
+      "bytes": 907,
+      "sha256": "952179a16a323af1cb11b625b2a4b519baee4b9724786b7829a118464a155ea1"
+    },
+    {
+      "source": "App/vocal_pipeline/models.py",
+      "destination": "App/vocal_pipeline/models.py",
+      "bytes": 3905,
+      "sha256": "b4406b63464545745446ddf67ee57392e1c8a2cb5ea53fbd857e0efe41cb9930"
+    },
+    {
+      "source": "App/vocal_pipeline/output_layout.py",
+      "destination": "App/vocal_pipeline/output_layout.py",
+      "bytes": 6604,
+      "sha256": "2a98c625e49c01158933682513f18292365262d6e6d047c56ad72a3ae18cbbea"
+    },
+    {
+      "source": "App/vocal_pipeline/paths.py",
+      "destination": "App/vocal_pipeline/paths.py",
+      "bytes": 2233,
+      "sha256": "457b69a93115a8e30ae7d486be448a0704c0ce216e91b2f315c3f25ea2382eee"
+    },
+    {
+      "source": "App/vocal_pipeline/policy.py",
+      "destination": "App/vocal_pipeline/policy.py",
+      "bytes": 2067,
+      "sha256": "0d5ae3e37747f880219c4363ed7d0d97965793fd9982bdd042f99e6680310c88"
+    },
+    {
+      "source": "App/vocal_pipeline/restoration_full.py",
+      "destination": "App/vocal_pipeline/restoration_full.py",
+      "bytes": 4821,
+      "sha256": "04b836a7d8a65d72264ac0d8eebeb866309d172ada55456a3a1280e1b7f43d74"
+    },
+    {
+      "source": "App/vocal_pipeline/restoration.py",
+      "destination": "App/vocal_pipeline/restoration.py",
+      "bytes": 5305,
+      "sha256": "05b97e8fcf4401951c7af9c9fb9d23e918cf9672787e6558af9ef64323e761a3"
+    },
+    {
+      "source": "App/vocal_pipeline/runner.py",
+      "destination": "App/vocal_pipeline/runner.py",
+      "bytes": 7054,
+      "sha256": "2841589cdc907e9340b1d9449067a04bfc83514c68cd0af3402aa8df07ad1035"
+    },
+    {
+      "source": "App/vocal_pipeline/schema.py",
+      "destination": "App/vocal_pipeline/schema.py",
+      "bytes": 3925,
+      "sha256": "949c8a35fa0433d302a20116e01d4ab846ac9178323669d03489ded19c7bcfa4"
+    },
+    {
+      "source": "App/vocal_pipeline/stages.py",
+      "destination": "App/vocal_pipeline/stages.py",
+      "bytes": 2807,
+      "sha256": "d52fa714b9f67352fe10c1458f639bae74ee6916e6d65d7ebd6f29b4adb0ef94"
+    },
+    {
+      "source": "App/assets/instagram.png",
+      "destination": "App/assets/instagram.png",
+      "bytes": 18992,
+      "sha256": "8d268ff30e02f0237b1988aa74e76dd067180bbf446db24a93b82f72b550a9e0"
+    },
+    {
+      "source": "App/assets/taskbar-x.ico",
+      "destination": "App/assets/taskbar-x.ico",
+      "bytes": 55645,
+      "sha256": "70f948169e6d7299afaa2af14caaca55514f2c20648f065e6490b439b7d1777a"
+    },
+    {
+      "source": "App/assets/taskbar-x.png",
+      "destination": "App/assets/taskbar-x.png",
+      "bytes": 1049039,
+      "sha256": "94ade694901b6a6e27d24fcdccc72a1dac6f92e88c2dba511832c28463b3e020"
+    },
+    {
+      "source": "App/assets/trailblazers.png",
+      "destination": "App/assets/trailblazers.png",
+      "bytes": 241670,
+      "sha256": "b9fe92cde180ae157957a9cd88d195b83fbc247be142d2cf21ac96bcb077c0be"
+    },
+    {
+      "source": "App/assets/vocal-x.ico",
+      "destination": "App/assets/vocal-x.ico",
+      "bytes": 55645,
+      "sha256": "70f948169e6d7299afaa2af14caaca55514f2c20648f065e6490b439b7d1777a"
+    },
+    {
+      "source": "App/assets/vocal-x.png",
+      "destination": "App/assets/vocal-x.png",
+      "bytes": 478049,
+      "sha256": "0e5678617b15d9b4f34a3ea969f592ad617227249890c2c8f1fa356ff4bd6a81"
+    },
+    {
+      "source": "App/license-public-key.json",
+      "destination": "App/license-public-key.json",
+      "bytes": 78,
+      "sha256": "1b6cd52b65e451e458b797b41bab2dfb29eb1226967cb333e519a697ffe74ee1"
+    },
+    {
+      "source": "Release/runtime-layout.json",
+      "destination": "App/runtime-layout.json",
+      "bytes": 22,
+      "sha256": "be37baa69d00a29a41079f2159d330cfac742ce057e319e4ddce1b684e183239"
+    },
+    {
+      "source": "Config/core-model-download-report.json",
+      "destination": "Config/core-model-download-report.json",
+      "bytes": 6159,
+      "sha256": "acac76b23479c883f1f10ade0d4ae6f1e89a358f40f19a4dd5ead4d6161dc4c1"
+    },
+    {
+      "source": "Tools/AnyEnhance-v1/config/anyenhance_v1.json",
+      "destination": "Tools/AnyEnhance-v1/config/anyenhance_v1.json",
+      "bytes": 2126,
+      "sha256": "a3ba23ceeabbe19bf3950c8aab272b1d73b844f32711ff3801f6f1dc38fc8fe8"
+    },
+    {
+      "source": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/anyenhance_model.py",
+      "destination": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/anyenhance_model.py",
+      "bytes": 33870,
+      "sha256": "e5a33ea55ea86497f18f1db51b73d843a52927fbc658fda7f4aba6e170926e8d"
+    },
+    {
+      "source": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/infer_anyenhance.py",
+      "destination": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/infer_anyenhance.py",
+      "bytes": 9828,
+      "sha256": "68986a5d6b2139eb01f7fc5fbe28c4b2e16ce61fda45f80fdcf0ba404d5188b0"
+    },
+    {
+      "source": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/modules/anyenhance_modules.py",
+      "destination": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/modules/anyenhance_modules.py",
+      "bytes": 18038,
+      "sha256": "e5d2670f094d934b65d964bdae201a839a88e9ce614fd7215a16cbb352ce63d3"
+    },
+    {
+      "source": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/modules/attend.py",
+      "destination": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/modules/attend.py",
+      "bytes": 4550,
+      "sha256": "0e6b83e2a0b2f4358df28affd65bb662ebbb0b9842422e74c28b17da073e5490"
+    },
+    {
+      "source": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/modules/encoder_loss.py",
+      "destination": "Tools/AnyEnhance-360M-Recovered/models/se/anyenhance/modules/encoder_loss.py",
+      "bytes": 7025,
+      "sha256": "5d158563940fefc74e2df9f0045ed3beef5edd4ab3312efb18a8cbe2bbcd629e"
+    },
+    {
+      "source": "Tools/AnyEnhance-v1/anyenhance/__init__.py",
+      "destination": "Tools/AnyEnhance-v1/anyenhance/__init__.py",
+      "bytes": 164,
+      "sha256": "082668e1687481fb475ea8221d0227754248efd7515e2523237095b9c3bebd47"
+    },
+    {
+      "source": "Tools/AnyEnhance-v1/anyenhance/anyenhance_module.py",
+      "destination": "Tools/AnyEnhance-v1/anyenhance/anyenhance_module.py",
+      "bytes": 33105,
+      "sha256": "e34ba88e46c37fc47e9c4d712119c8a42a5ba303c0b71b7f76ba0979dd2e59cd"
+    },
+    {
+      "source": "Tools/AnyEnhance-v1/anyenhance/attend.py",
+      "destination": "Tools/AnyEnhance-v1/anyenhance/attend.py",
+      "bytes": 4313,
+      "sha256": "d87bb584d37edc92a4a2649b3cd71d821a4678c2f345ecc39bfb73fb2225b882"
+    },
+    {
+      "source": "Tools/AnyEnhance-v1/anyenhance/encoder_loss.py",
+      "destination": "Tools/AnyEnhance-v1/anyenhance/encoder_loss.py",
+      "bytes": 7613,
+      "sha256": "fa19511f2f5205fdb21d69c23d1b1d30d4284bca898959f23f7c38d01c74d296"
+    },
+    {
+      "source": "Pipelines/Presets/AnyEnhance 360M - Isolierte Vocal.json",
+      "destination": "Pipelines/Presets/AnyEnhance 360M - Isolierte Vocal.json",
+      "bytes": 1450,
+      "sha256": "8ad84139e43ade8ffdd956d9ac935299c2cc24ecbe14aa20f4b3e81875e15ee7"
+    },
+    {
+      "source": "Pipelines/Presets/AnyEnhance 360M - Song zu Vocal.json",
+      "destination": "Pipelines/Presets/AnyEnhance 360M - Song zu Vocal.json",
+      "bytes": 1947,
+      "sha256": "cf1616e1e839c75eac73b1b72e2d5bcc556055c2c57807836f37f0b03e77b72e"
+    },
+    {
+      "source": "Pipelines/Presets/Clean Acapella.json",
+      "destination": "Pipelines/Presets/Clean Acapella.json",
+      "bytes": 3332,
+      "sha256": "ca16a58256710075326de420ddec0000e76198f9f00fddbf1d854c2604859ff6"
+    },
+    {
+      "source": "Pipelines/Presets/Dry Studio Vocal.json",
+      "destination": "Pipelines/Presets/Dry Studio Vocal.json",
+      "bytes": 3431,
+      "sha256": "b45fc5c8377b9819525e131417f97aa9325cb2c5863561ee915580c3abe9912d"
+    },
+    {
+      "source": "Pipelines/Presets/KI-Restaurierung - Bereits isolierte Vocal.json",
+      "destination": "Pipelines/Presets/KI-Restaurierung - Bereits isolierte Vocal.json",
+      "bytes": 1424,
+      "sha256": "9017c949e630776b66b755c378da58f8cd3c8b27da60c168e079989db44fdfa7"
+    },
+    {
+      "source": "Pipelines/Presets/KI-Restaurierung - Experimentell.json",
+      "destination": "Pipelines/Presets/KI-Restaurierung - Experimentell.json",
+      "bytes": 1913,
+      "sha256": "ee3595ad054e162eac1450b395f98e99f9d2397f2eb8f1dfbbec0d7a060f4bdf"
+    },
+    {
+      "source": "Pipelines/Presets/Maximum Vocal.json",
+      "destination": "Pipelines/Presets/Maximum Vocal.json",
+      "bytes": 3327,
+      "sha256": "95271f46452ae2edaa7ec63600e8d18910cb1bb65cec941013aed7e10f8549e6"
+    },
+    {
+      "source": "Pipelines/Presets/Natuerlich.json",
+      "destination": "Pipelines/Presets/Natuerlich.json",
+      "bytes": 3174,
+      "sha256": "f286cdcbc7d5bfcf464b0f416ec20bef5649e54c0e7ee1c3891d8e3900bfe723"
+    },
+    {
+      "source": "Pipelines/Presets/Schonend.json",
+      "destination": "Pipelines/Presets/Schonend.json",
+      "bytes": 3237,
+      "sha256": "63ddced50027f501e32e2f3f61aaaee6d8a63c7e315017daa246a7363a01c935"
+    },
+    {
+      "source": "Pipelines/Presets/Trocken.json",
+      "destination": "Pipelines/Presets/Trocken.json",
+      "bytes": 3235,
+      "sha256": "dec643e2d955e9247f9f32616aea6eaf82457d965ced42aab265c381796a5a92"
+    },
+    {
+      "source": "Pipelines/Presets/Zischlaute kontrollieren.json",
+      "destination": "Pipelines/Presets/Zischlaute kontrollieren.json",
+      "bytes": 3292,
+      "sha256": "80dfcb982a4778971b54d0a64f16a41a196fdf1429b4fe87a5a6ddb12bd5f1d1"
+    }
+  ],
+  "presets": [
+    {
+      "name": "AnyEnhance 360M - Isolierte Vocal",
+      "source": "Pipelines/Presets/AnyEnhance 360M - Isolierte Vocal.json",
+      "models": [
+        "anyenhance-360m-selfcritic-v2"
+      ],
+      "blocked_models": [
+        "anyenhance-360m-selfcritic-v2"
+      ]
+    },
+    {
+      "name": "AnyEnhance 360M - Song zu Vocal",
+      "source": "Pipelines/Presets/AnyEnhance 360M - Song zu Vocal.json",
+      "models": [
+        "anyenhance-360m-selfcritic-v2",
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ],
+      "blocked_models": [
+        "anyenhance-360m-selfcritic-v2",
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    },
+    {
+      "name": "Clean Acapella",
+      "source": "Pipelines/Presets/Clean Acapella.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ],
+      "blocked_models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ]
+    },
+    {
+      "name": "Dry Studio Vocal",
+      "source": "Pipelines/Presets/Dry Studio Vocal.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-echo-v2-by-sucial",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ],
+      "blocked_models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-echo-v2-by-sucial",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ]
+    },
+    {
+      "name": "KI-Restaurierung - Bereits isolierte Vocal",
+      "source": "Pipelines/Presets/KI-Restaurierung - Bereits isolierte Vocal.json",
+      "models": [
+        "anyenhance-v1-baseline"
+      ],
+      "blocked_models": [
+        "anyenhance-v1-baseline"
+      ]
+    },
+    {
+      "name": "KI-Restaurierung - Experimentell",
+      "source": "Pipelines/Presets/KI-Restaurierung - Experimentell.json",
+      "models": [
+        "anyenhance-v1-baseline",
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ],
+      "blocked_models": [
+        "anyenhance-v1-baseline",
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    },
+    {
+      "name": "Maximum Vocal",
+      "source": "Pipelines/Presets/Maximum Vocal.json",
+      "models": [
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+        "roformer-model-melband-roformer-deux-by-becruily"
+      ],
+      "blocked_models": [
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+        "roformer-model-melband-roformer-deux-by-becruily"
+      ]
+    },
+    {
+      "name": "Natürlich",
+      "source": "Pipelines/Presets/Natuerlich.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ],
+      "blocked_models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    },
+    {
+      "name": "Schonend",
+      "source": "Pipelines/Presets/Schonend.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ],
+      "blocked_models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ]
+    },
+    {
+      "name": "Trocken",
+      "source": "Pipelines/Presets/Trocken.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ],
+      "blocked_models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ]
+    },
+    {
+      "name": "Zischlaute kontrollieren",
+      "source": "Pipelines/Presets/Zischlaute kontrollieren.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ],
+      "blocked_models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    }
+  ],
+  "blockers": [
+    "Local runtime candidate exists; dependency/license review and full app integration remain incomplete.",
+    "Launcher replacement and installer have not been built or verified.",
+    "Fresh Windows test unavailable; no external release approval.",
+    "AnyEnhance 360M - Isolierte Vocal: model package review incomplete: anyenhance-360m-selfcritic-v2",
+    "AnyEnhance 360M - Song zu Vocal: model package review incomplete: anyenhance-360m-selfcritic-v2, roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+    "Clean Acapella: model package review incomplete: roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa, roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+    "Dry Studio Vocal: model package review incomplete: roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa, roformer-model-melband-roformer-de-reverb-echo-v2-by-sucial, roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+    "KI-Restaurierung - Bereits isolierte Vocal: model package review incomplete: anyenhance-v1-baseline",
+    "KI-Restaurierung - Experimentell: model package review incomplete: anyenhance-v1-baseline, roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+    "Maximum Vocal: model package review incomplete: roformer-model-melband-roformer-de-reverb-super-big-by-sucial, roformer-model-melband-roformer-deux-by-becruily",
+    "Natürlich: model package review incomplete: roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+    "Schonend: model package review incomplete: roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa, roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+    "Trocken: model package review incomplete: roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa, roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+    "Zischlaute kontrollieren: model package review incomplete: roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+  ],
+  "excluded": [
+    "Private",
+    "Activator",
+    "Tools/LicenseAdmin",
+    ".venv",
+    ".venv-anyenhance",
+    "Models (separate reviewed package)",
+    "Input",
+    "Output",
+    "Processing",
+    "License",
+    "Config user data except Config/core-model-download-report.json",
+    "Backups",
+    "tests",
+    "Vocal X.exe"
+  ]
+}

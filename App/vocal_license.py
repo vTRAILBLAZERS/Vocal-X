@@ -8,20 +8,20 @@ PRODUCT='Vocal X'
 EDITION='Beta'
 APP_VERSION='0.1.0-beta.1'
 BETA_EXPIRES='2027-01-01T00:00:00Z'  # Exclusive UTC boundary: includes 31 December 2026.
-SERIAL=re.compile(r'VX-BETA-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}\Z')
+SERIAL=re.compile(r'VX-(?:BETA|DEV)-[A-Z0-9]{4}-[A-Z0-9]{4}-[A-Z0-9]{4}\Z')
 FINGERPRINT=re.compile(r'[0-9a-f]{64}\Z')
 class LicenseError(ValueError):
  def __init__(self,code):self.code=code;super().__init__(code)
 MESSAGES={
- 'public_key':('Die Lizenzprüfung ist unvollständig installiert. Bitte Vocal X reparieren.','License verification is not installed correctly. Please repair Vocal X.'),
- 'serial':('Ungültiges Seriennummernformat.','Invalid serial number format.'),
- 'token':('Ungültiger oder beschädigter Activation Token.','Invalid or damaged activation token.'),
- 'signature':('Die Lizenzsignatur ist ungültig.','License signature verification failed.'),
- 'device':('Diese Lizenz gehört zu einem anderen Gerät.','This license belongs to another device.'),
+ 'public_key':('Die LizenzprÃ¼fung ist unvollstÃ¤ndig installiert. Bitte Vocal X reparieren.','License verification is not installed correctly. Please repair Vocal X.'),
+ 'serial':('UngÃ¼ltiges Seriennummernformat.','Invalid serial number format.'),
+ 'token':('UngÃ¼ltiger oder beschÃ¤digter Activation Token.','Invalid or damaged activation token.'),
+ 'signature':('Die Lizenzsignatur ist ungÃ¼ltig.','License signature verification failed.'),
+ 'device':('Diese Lizenz gehÃ¶rt zu einem anderen GerÃ¤t.','This license belongs to another device.'),
  'expired':('Diese Beta-Lizenz ist abgelaufen.','This beta license has expired.'),
- 'clock':('Bitte Datum und Uhrzeit des PCs prüfen.','Please check this PC’s date and time.'),
- 'version':('Diese Lizenz gilt nicht für diese App-Version.','This license does not cover this app version.'),
- 'fingerprint':('Die stabile Gerätekennung konnte nicht gelesen werden.','The stable device identifier could not be read.'),
+ 'clock':('Bitte Datum und Uhrzeit des PCs prÃ¼fen.','Please check this PCâ€™s date and time.'),
+ 'version':('Diese Lizenz gilt nicht fÃ¼r diese App-Version.','This license does not cover this app version.'),
+ 'fingerprint':('Die stabile GerÃ¤tekennung konnte nicht gelesen werden.','The stable device identifier could not be read.'),
  'missing':('Vocal X ist noch nicht aktiviert.','Vocal X has not been activated yet.')}
 def message(error,language='de'):return MESSAGES.get(error.code,MESSAGES['token'])[language=='en']
 def canonical(value):return json.dumps(value,sort_keys=True,separators=(',',':'),ensure_ascii=True).encode('ascii')
@@ -34,7 +34,7 @@ def serial(value):
  value=str(value).strip().upper()
  if not SERIAL.fullmatch(value):raise LicenseError('serial')
  return value
-def mask(value):return 'VX-BETA-****-****-'+serial(value)[-4:]
+def mask(value):value=serial(value);return ('VX-DEV-' if value.startswith('VX-DEV-') else 'VX-BETA-')+'****-****-'+value[-4:]
 def timestamp(value):
  try:
   dt=datetime.strptime(value,'%Y-%m-%dT%H:%M:%SZ').replace(tzinfo=timezone.utc)

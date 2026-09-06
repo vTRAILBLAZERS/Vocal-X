@@ -42,4 +42,23 @@ class QOLCoreTests(unittest.TestCase):
   self.assertEqual(self.hash,self.digest(original))
  def test_same_basename_different_source(self):
   run(self.root,self.p,self.source);other=self.root/'other/song.wav';other.parent.mkdir();other.write_bytes(self.source.read_bytes());self.assertNotEqual(track_directory(self.root,self.source),track_directory(self.root,other))
+ def test_final_asd_sidecar_history(self):
+  _,first=run(self.root,self.p,self.source)
+  final=Path(first['output'])
+  sidecar=Path(str(final)+'.asd')
+  payload=b'ableton-vocal-x-sidecar'
+  sidecar.write_bytes(payload)
+  _,second=run(self.root,self.p,self.source)
+  new_final=Path(second['output'])
+  self.assertEqual(new_final,final)
+  self.assertTrue(new_final.is_file())
+  self.assertFalse(sidecar.exists())
+  self.assertEqual([p.name for p in new_final.parent.iterdir()],[new_final.name])
+  history=Path(second['output_folder'])/'History'
+  old_wavs=list(history.rglob(final.name))
+  old_asds=list(history.rglob(final.name+'.asd'))
+  self.assertTrue(old_wavs)
+  self.assertTrue(old_asds)
+  self.assertTrue(any(p.read_bytes()==payload for p in old_asds))
+
 if __name__=='__main__':unittest.main(verbosity=2)

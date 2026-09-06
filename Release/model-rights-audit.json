@@ -1,0 +1,470 @@
+{
+  "reviewed_on": "2026-09-06",
+  "scope": "Current preset set; conservative release decisions, not a blanket prohibition of private local use",
+  "models": [
+    {
+      "model": "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+      "author": "pcunwa",
+      "source": "https://huggingface.co/pcunwa/BS-Roformer-Leap",
+      "license": "Unclear",
+      "redistribution": "Unresolved for exact package",
+      "commercial_use": "Unclear",
+      "attribution": "Unclear",
+      "modification": "Unclear",
+      "notes": "No explicit license found on original model card.",
+      "release_allowed": false,
+      "used_by": [
+        "Custom Template",
+        "AnyEnhance 360M - Song zu Vocal",
+        "Clean Acapella",
+        "Dry Studio Vocal",
+        "KI-Restaurierung - Experimentell",
+        "Natürlich",
+        "Schonend",
+        "Trocken",
+        "Zischlaute kontrollieren"
+      ],
+      "files": [
+        {
+          "path": "Models/BS-RoFormer/roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa/bs_leap_xe_voc.ckpt",
+          "size": 267796851,
+          "sha256": "b739c1d2d87a81cd3dd3844ed9ad0bd678708c7a0a761a03a1aaff9af79a096d",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/pcunwa/BS-Roformer-Leap/resolve/4e47d6662ae82eaa8b4ac4329fe66099a843b48e/Xe/bs_leap_xe_voc.ckpt"
+        },
+        {
+          "path": "Models/BS-RoFormer/roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa/leap_xe_config_voc.yaml",
+          "size": 2190,
+          "sha256": "d3cb8c84be2e9bcbc64c1086e2256dc097ab5addebc5ce507818e90ff8cbdc25",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/pcunwa/BS-Roformer-Leap/resolve/4e47d6662ae82eaa8b4ac4329fe66099a843b48e/Xe/leap_xe_config_voc.yaml"
+        }
+      ]
+    },
+    {
+      "model": "roformer-model-bs-roformer-leap-vocals-by-pcunwa",
+      "author": "pcunwa",
+      "source": "https://huggingface.co/pcunwa/BS-Roformer-Leap",
+      "license": "Unclear",
+      "redistribution": "Unresolved for exact package",
+      "commercial_use": "Unclear",
+      "attribution": "Unclear",
+      "modification": "Unclear",
+      "notes": "No explicit license found on original model card.",
+      "release_allowed": false,
+      "used_by": [],
+      "files": [
+        {
+          "path": "Models/BS-RoFormer/roformer-model-bs-roformer-leap-vocals-by-pcunwa/bs_roformer_leap_voc.ckpt",
+          "size": 238220459,
+          "sha256": "8c0e4bfff6be150a12582a7c236379aa42102b7f43831900df5b2addf924da7c",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/pcunwa/BS-Roformer-Leap/resolve/main/bs_roformer_leap_voc.ckpt"
+        },
+        {
+          "path": "Models/BS-RoFormer/roformer-model-bs-roformer-leap-vocals-by-pcunwa/bs_leap_voc_conf.yaml",
+          "size": 1961,
+          "sha256": "fb4238cd1e0cd6e6620b3f4e70bbea0dc5b1f1bdcf51f96b5091d2ee6794b8c8",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/pcunwa/BS-Roformer-Leap/resolve/main/bs_leap_voc_conf.yaml"
+        }
+      ]
+    },
+    {
+      "model": "roformer-model-bs-roformer-vocals-resurrection-by-unwa",
+      "author": "unwa",
+      "source": "https://huggingface.co/Politrees/UVR_resources",
+      "license": "Conflicting metadata",
+      "redistribution": "Unresolved for exact package",
+      "commercial_use": "Unclear",
+      "attribution": "Unclear",
+      "modification": "Unclear",
+      "notes": "Mirror says MIT; installed registry says CC-BY-NC-SA-4.0. A mirror cannot establish the original author grant.",
+      "release_allowed": false,
+      "used_by": [],
+      "files": [
+        {
+          "path": "Models/BS-RoFormer/roformer-model-bs-roformer-vocals-resurrection-by-unwa/bs_roformer_vocals_resurrection_unwa.ckpt",
+          "size": 204510749,
+          "sha256": "9dbfe5cb572e4ed32a15ec727d7bd06c8d7aba97509e6fda5bc008bb1e0b2dd5",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/Politrees/UVR_resources/resolve/main/models/Roformer/BandSplit/model_BandSplit-Roformer_Resurrection_Vocals_by-Unwa.ckpt"
+        },
+        {
+          "path": "Models/BS-RoFormer/roformer-model-bs-roformer-vocals-resurrection-by-unwa/config_bs_roformer_vocals_resurrection_unwa.yaml",
+          "size": 2633,
+          "sha256": "79c65b6158c8e9236c9f02247cbb2fb6eb0007c42c47799e9de8e86f474556c6",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/Politrees/UVR_resources/resolve/main/models/Roformer/BandSplit/config_BandSplit-Roformer_Resurrection_Vocals_by-Unwa.yaml"
+        }
+      ]
+    },
+    {
+      "model": "roformer-model-bs-roformer-vocals-revive-v3e-by-unwa",
+      "author": "unwa",
+      "source": "https://huggingface.co/Politrees/UVR_resources",
+      "license": "Conflicting metadata",
+      "redistribution": "Unresolved for exact package",
+      "commercial_use": "Unclear",
+      "attribution": "Unclear",
+      "modification": "Unclear",
+      "notes": "Mirror says MIT; installed registry says CC-BY-NC-SA-4.0. Author/weight-specific terms required.",
+      "release_allowed": false,
+      "used_by": [],
+      "files": [
+        {
+          "path": "Models/BS-RoFormer/roformer-model-bs-roformer-vocals-revive-v3e-by-unwa/bs_roformer_vocals_revive_v3e_unwa.ckpt",
+          "size": 639326600,
+          "sha256": "1b0751b9a15c591407c3b77f08eb4ad3005e42e96051f3f2b39760f1130c467b",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/Politrees/UVR_resources/resolve/main/models/Roformer/BandSplit/bs_roformer_revive_v3_by_unwa.ckpt"
+        },
+        {
+          "path": "Models/BS-RoFormer/roformer-model-bs-roformer-vocals-revive-v3e-by-unwa/config_bs_roformer_vocals_revive_unwa.yaml",
+          "size": 2382,
+          "sha256": "6b9d5fb6aeda6b0941f937e4e4883643e3187331ff403fb820c7aa6af4b02dbb",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/Politrees/UVR_resources/resolve/main/models/Roformer/BandSplit/config_bs_roformer_revive_by_unwa.yaml"
+        }
+      ]
+    },
+    {
+      "model": "melband-roformer-big-beta7",
+      "author": "pcunwa/unwa",
+      "source": "https://huggingface.co/pcunwa/Mel-Band-Roformer-big",
+      "license": "Unclear",
+      "redistribution": "Unresolved for exact package",
+      "commercial_use": "Unclear",
+      "attribution": "Unclear",
+      "modification": "Unclear",
+      "notes": "No model card/license shown; original weight permission required.",
+      "release_allowed": false,
+      "used_by": [],
+      "files": [
+        {
+          "path": "Models/MelBand-RoFormer/melband-roformer-big-beta7/big_beta7.ckpt",
+          "size": 944675923,
+          "sha256": "9d68b9a8689a3500c45d3418a7811934e557760db07285f483088a0965b0eb88",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/pcunwa/Mel-Band-Roformer-big/resolve/main/big_beta7.ckpt"
+        },
+        {
+          "path": "Models/MelBand-RoFormer/melband-roformer-big-beta7/big_beta7.yaml",
+          "size": 1723,
+          "sha256": "a2ad8056dfdb394422d62dd823f7a02b7f17f6be12870da913bd84b962f2e7c9",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/pcunwa/Mel-Band-Roformer-big/resolve/main/big_beta7.yaml"
+        }
+      ]
+    },
+    {
+      "model": "roformer-model-melband-roformer-deux-by-becruily",
+      "author": "becruily",
+      "source": "https://huggingface.co/becruily/mel-band-roformer-deux",
+      "license": "CC-BY-NC-4.0",
+      "redistribution": "Conditional noncommercial only",
+      "commercial_use": "No under stated NC license",
+      "attribution": "Required",
+      "modification": "Conditional",
+      "notes": "Original model card explicitly noncommercial. Beta purpose must be assessed.",
+      "release_allowed": false,
+      "used_by": [
+        "Maximum Vocal"
+      ],
+      "files": [
+        {
+          "path": "Models/MelBand-RoFormer/roformer-model-melband-roformer-deux-by-becruily/becruily_deux.ckpt",
+          "size": 435006815,
+          "sha256": "10255c02295bf3e3865d4ee50ff752d7b19b124ed5fd93b147babc4333eda3aa",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/becruily/mel-band-roformer-deux/resolve/main/becruily_deux.ckpt"
+        },
+        {
+          "path": "Models/MelBand-RoFormer/roformer-model-melband-roformer-deux-by-becruily/config_deux_becruily.yaml",
+          "size": 1175,
+          "sha256": "bb3ea9bce37ca96d63568490d5a92d7e41df3d7726788b6970c10d89eb62d902",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/becruily/mel-band-roformer-deux/resolve/main/config_deux_becruily.yaml"
+        }
+      ]
+    },
+    {
+      "model": "melband-roformer-kim-vocals",
+      "author": "Kimberley Jensen",
+      "source": "https://huggingface.co/KimberleyJSN/melbandroformer",
+      "license": "MIT on original card",
+      "redistribution": "Unresolved for exact package",
+      "commercial_use": "Conditional under MIT",
+      "attribution": "Required",
+      "modification": "Conditional",
+      "notes": "Registry incorrectly/differently labels CC-BY-NC-SA. Resolve pinned weight attribution and separately sourced YAML before packaging.",
+      "release_allowed": false,
+      "used_by": [],
+      "files": [
+        {
+          "path": "Models/MelBand-RoFormer/melband-roformer-kim-vocals/MelBandRoformer.ckpt",
+          "size": 913106900,
+          "sha256": "87201f4d31afb5bc79993230fc49446918425574db48c01c405e44f365c7559e",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/KimberleyJSN/melbandroformer/resolve/main/MelBandRoformer.ckpt"
+        },
+        {
+          "path": "Models/MelBand-RoFormer/melband-roformer-kim-vocals/config_vocals_mel_band_roformer.yaml",
+          "size": 728,
+          "sha256": "5e380dfa5d5757ac4c2b7f6ef607b93d5058ecff805e7b05ed730a47b90d103c",
+          "registry_hash_matches": true,
+          "download_source": "https://raw.githubusercontent.com/TRvlvr/application_data/main/mdx_model_data/mdx_c_configs/config_vocals_mel_band_roformer.yaml"
+        }
+      ]
+    },
+    {
+      "model": "roformer-model-mel-roformer-viperx-1143",
+      "author": "ViperX",
+      "source": "https://github.com/nomadkaraoke/python-audio-separator/releases/tag/model-configs",
+      "license": "Unclear",
+      "redistribution": "Unresolved for exact package",
+      "commercial_use": "Unclear",
+      "attribution": "Unclear",
+      "modification": "Unclear",
+      "notes": "Download mirror does not establish weight redistribution permission.",
+      "release_allowed": false,
+      "used_by": [],
+      "files": [
+        {
+          "path": "Models/MelBand-RoFormer/roformer-model-mel-roformer-viperx-1143/model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt",
+          "size": 1007816988,
+          "sha256": "21b9d0958e35b8ebfbe2afe69bbd5444e5ffe2f5d80ae0d583b833d2f3c0d139",
+          "registry_hash_matches": true,
+          "download_source": "https://github.com/nomadkaraoke/python-audio-separator/releases/download/model-configs/model_mel_band_roformer_ep_3005_sdr_11.4360.ckpt"
+        },
+        {
+          "path": "Models/MelBand-RoFormer/roformer-model-mel-roformer-viperx-1143/model_mel_band_roformer_ep_3005_sdr_11.4360.yaml",
+          "size": 1794,
+          "sha256": "d9b083b48dfdd0bd10f8a29a9c18777b0419496d938827f48a1db31bf0193aa3",
+          "registry_hash_matches": true,
+          "download_source": "https://github.com/nomadkaraoke/python-audio-separator/releases/download/model-configs/model_mel_band_roformer_ep_3005_sdr_11.4360.yaml"
+        }
+      ]
+    },
+    {
+      "model": "roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+      "author": "Sucial",
+      "source": "https://huggingface.co/Sucial/Dereverb-Echo_Mel_Band_Roformer",
+      "license": "CC-BY-NC-SA-4.0; mirror mapping pending",
+      "redistribution": "Conditional noncommercial only",
+      "commercial_use": "No under stated NC license",
+      "attribution": "Required",
+      "modification": "Conditional; share-alike applies to adapted material",
+      "notes": "Original family is noncommercial/share-alike; exact renamed mirror weight must be matched.",
+      "release_allowed": false,
+      "used_by": [
+        "Clean Acapella",
+        "Dry Studio Vocal",
+        "Maximum Vocal",
+        "Schonend",
+        "Trocken"
+      ],
+      "files": [
+        {
+          "path": "Models/MelBand-RoFormer/roformer-model-melband-roformer-de-reverb-super-big-by-sucial/dereverb_super_big_mbr_ep_346.ckpt",
+          "size": 455864012,
+          "sha256": "26dda242bce4405555f2d6086d079fe8cc23f1f04e02e501d2689bfe3ece0489",
+          "registry_hash_matches": true,
+          "download_source": "https://github.com/nomadkaraoke/python-audio-separator/releases/download/model-configs/dereverb_super_big_mbr_ep_346.ckpt"
+        },
+        {
+          "path": "Models/MelBand-RoFormer/roformer-model-melband-roformer-de-reverb-super-big-by-sucial/config_dereverb_echo_mel_band_roformer_v2.yaml",
+          "size": 1105,
+          "sha256": "b801c49dbc09372f85281127adde7ded28f475d98e9940efba4a2f45202b38f2",
+          "registry_hash_matches": true,
+          "download_source": "https://github.com/nomadkaraoke/python-audio-separator/releases/download/model-configs/config_dereverb_echo_mel_band_roformer_v2.yaml"
+        }
+      ]
+    },
+    {
+      "model": "roformer-model-melband-roformer-de-reverb-echo-v2-by-sucial",
+      "author": "Sucial",
+      "source": "https://huggingface.co/Sucial/Dereverb-Echo_Mel_Band_Roformer",
+      "license": "CC-BY-NC-SA-4.0",
+      "redistribution": "Conditional noncommercial only",
+      "commercial_use": "No under stated NC license",
+      "attribution": "Required",
+      "modification": "Conditional; share-alike applies to adapted material",
+      "notes": "Original model card lists the V2 checkpoint. Noncommercial, attribution and share-alike terms apply.",
+      "release_allowed": false,
+      "used_by": [
+        "Dry Studio Vocal"
+      ],
+      "files": [
+        {
+          "path": "Models/MelBand-RoFormer/roformer-model-melband-roformer-de-reverb-echo-v2-by-sucial/dereverb_echo_mbr_v2_sdr_dry_13.4843.ckpt",
+          "size": 455862568,
+          "sha256": "396432f5af25992fe82d0286634bd879027c073721db6ab10199e75459708b9f",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/Sucial/Dereverb-Echo_Mel_Band_Roformer/resolve/main/dereverb_echo_mbr_v2_sdr_dry_13.4843.ckpt"
+        },
+        {
+          "path": "Models/MelBand-RoFormer/roformer-model-melband-roformer-de-reverb-echo-v2-by-sucial/config_dereverb_echo_mbr_v2.yaml",
+          "size": 1135,
+          "sha256": "fb26df515b5acc81aa0a281920decd849588d8d09171e9c20fb8cbd5d2efc120",
+          "registry_hash_matches": true,
+          "download_source": "https://huggingface.co/Sucial/Dereverb-Echo_Mel_Band_Roformer/resolve/main/config_dereverb_echo_mbr_v2.yaml"
+        }
+      ]
+    },
+    {
+      "model": "anyenhance-v1-baseline",
+      "author": "AnyEnhance / CCF-AATC baseline authors",
+      "source": "https://github.com/viewfinder-annn/AnyEnhance-v1",
+      "license": "Weight license unclear",
+      "redistribution": "Unresolved / noncommercial constraint",
+      "commercial_use": "Not cleared",
+      "attribution": "Required if CC license confirmed",
+      "modification": "Not cleared",
+      "notes": "Code license alone does not grant checkpoint rights.",
+      "release_allowed": false,
+      "used_by": [
+        "KI-Restaurierung - Bereits isolierte Vocal",
+        "KI-Restaurierung - Experimentell"
+      ],
+      "files": [
+        {
+          "path": "Models/AnyEnhance-v1/model.pt",
+          "size": 182775150,
+          "sha256": "ec262582c53cd32d22b0913896fd70e7c88334b235f67069f6162bb5d436a0b4"
+        }
+      ]
+    },
+    {
+      "model": "anyenhance-360m-selfcritic-v2",
+      "author": "Amphion",
+      "source": "https://modelscope.cn/models/amphion/anyenhance",
+      "license": "CC-BY-NC-4.0 in local provenance; live confirmation pending",
+      "redistribution": "Unresolved / noncommercial constraint",
+      "commercial_use": "Not cleared",
+      "attribution": "Required if CC license confirmed",
+      "modification": "Not cleared",
+      "notes": "Source page confirms model; license was not visible in current text retrieval. Recovered code provenance also needs review.",
+      "release_allowed": false,
+      "used_by": [
+        "AnyEnhance 360M - Isolierte Vocal",
+        "AnyEnhance 360M - Song zu Vocal"
+      ],
+      "files": [
+        {
+          "path": "Models/AnyEnhance-360M/model.pt",
+          "size": 1455157350,
+          "sha256": "a6da73d669560cf0fc936d26378e192ee83c9dbd2678cfb439112a67b140965c"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Template",
+      "file": "Pipelines/Custom/Custom Template.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    },
+    {
+      "name": "AnyEnhance 360M - Isolierte Vocal",
+      "file": "Pipelines/Presets/AnyEnhance 360M - Isolierte Vocal.json",
+      "models": [
+        "anyenhance-360m-selfcritic-v2"
+      ]
+    },
+    {
+      "name": "AnyEnhance 360M - Song zu Vocal",
+      "file": "Pipelines/Presets/AnyEnhance 360M - Song zu Vocal.json",
+      "models": [
+        "anyenhance-360m-selfcritic-v2",
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    },
+    {
+      "name": "Clean Acapella",
+      "file": "Pipelines/Presets/Clean Acapella.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ]
+    },
+    {
+      "name": "Dry Studio Vocal",
+      "file": "Pipelines/Presets/Dry Studio Vocal.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-echo-v2-by-sucial",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ]
+    },
+    {
+      "name": "KI-Restaurierung - Bereits isolierte Vocal",
+      "file": "Pipelines/Presets/KI-Restaurierung - Bereits isolierte Vocal.json",
+      "models": [
+        "anyenhance-v1-baseline"
+      ]
+    },
+    {
+      "name": "KI-Restaurierung - Experimentell",
+      "file": "Pipelines/Presets/KI-Restaurierung - Experimentell.json",
+      "models": [
+        "anyenhance-v1-baseline",
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    },
+    {
+      "name": "Maximum Vocal",
+      "file": "Pipelines/Presets/Maximum Vocal.json",
+      "models": [
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial",
+        "roformer-model-melband-roformer-deux-by-becruily"
+      ]
+    },
+    {
+      "name": "Natürlich",
+      "file": "Pipelines/Presets/Natuerlich.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    },
+    {
+      "name": "Schonend",
+      "file": "Pipelines/Presets/Schonend.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ]
+    },
+    {
+      "name": "Trocken",
+      "file": "Pipelines/Presets/Trocken.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa",
+        "roformer-model-melband-roformer-de-reverb-super-big-by-sucial"
+      ]
+    },
+    {
+      "name": "Zischlaute kontrollieren",
+      "file": "Pipelines/Presets/Zischlaute kontrollieren.json",
+      "models": [
+        "roformer-model-bs-roformer-leap-xe-vocals-by-pcunwa"
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "model": "Descript DAC",
+      "source": "https://huggingface.co/descript/descript-audio-codec",
+      "license": "MIT on original card",
+      "redistribution": "Permitted subject to MIT notice; exact weight attribution pending package notices"
+    },
+    {
+      "model": "w2v-BERT 2.0",
+      "source": "https://huggingface.co/facebook/w2v-bert-2.0",
+      "license": "MIT on original card",
+      "redistribution": "Permitted subject to MIT notice; use pinned revision from provenance"
+    }
+  ]
+}

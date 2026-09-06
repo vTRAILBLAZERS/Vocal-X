@@ -49,4 +49,25 @@ class PipelineTests(unittest.TestCase):
         self.pipeline['stages'][0]['input']='unknown'
         with self.assertRaises(ValueError): run(self.root,self.pipeline,self.source)
 
+    def test_final_peak_safety(self):
+        p={'version':1,'name':'peak-safety','stages':[dict(id='export',type='export',input='previous',output='final',enabled=True,optional=False,parameters={'flac':False},model=None,engine='DSP')]}
+        target=float(10**(-1.0/20.0))
+        hot=self.root/'hot.wav'
+        hot_data=np.full((1000,2),1.25,dtype=np.float32)
+        sf.write(hot,hot_data,44100,subtype='FLOAT')
+        _,hot_state=run(self.root,p,hot)
+        hot_out=sf.read(hot_state['output'],dtype='float32',always_2d=True)[0]
+        hot_peak=float(np.max(np.abs(hot_out)))
+        self.assertAlmostEqual(hot_peak,target,places=6)
+        self.assertLessEqual(hot_peak,target+1e-6)
+        self.assertEqual(int(np.count_nonzero(np.abs(hot_out)>1.0)),0)
+        self.assertTrue(bool(np.isfinite(hot_out).all()))
+        low=self.root/'low.wav'
+        low_data=np.full((1000,2),0.5,dtype=np.float32)
+        sf.write(low,low_data,44100,subtype='FLOAT')
+        _,low_state=run(self.root,p,low)
+        low_out=sf.read(low_state['output'],dtype='float32',always_2d=True)[0]
+        np.testing.assert_array_equal(low_out,low_data)
+        self.assertEqual(int(np.count_nonzero(np.abs(low_out)>1.0)),0)
+
 if __name__=='__main__': unittest.main(verbosity=2)

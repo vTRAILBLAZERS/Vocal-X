@@ -4,6 +4,9 @@ from pathlib import Path
 MODEL='anyenhance-360m-selfcritic-v2'
 def assets(root):
  root=Path(root); folder=root/'Models/AnyEnhance-360M'; source=root/'Tools/AnyEnhance-360M-Recovered'
+ source_required=[source/'models/se/anyenhance/modules/encoder_loss.py',source/'models/se/anyenhance/anyenhance_model.py',source/'models/se/anyenhance/modules/anyenhance_modules.py']
+ for p in source_required:
+  if not p.is_file() or not p.stat().st_size: raise FileNotFoundError('AnyEnhance 360M source incomplete: '+str(p))
  paths=[folder/'w2v-bert-2.0/model.safetensors',folder/'w2v-bert-2.0/config.json',folder/'w2v-bert-2.0/preprocessor_config.json',folder/'model.pt',folder/'dac.pth',folder/'anyenhance-360M-selfcritic-v2.json',folder/'provenance.json',Path(__file__),root/'App/vocal_pipeline/restoration.py']+sorted((source/'models').rglob('*.py'))
  for p in paths:
   if not p.is_file() or not p.stat().st_size: raise FileNotFoundError(str(p))

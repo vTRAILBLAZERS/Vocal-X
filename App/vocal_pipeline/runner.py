@@ -1,4 +1,5 @@
 from license_service import require_license
+from diagnostics import record
 from .paths import data_root
 import hashlib
 import json
@@ -98,12 +99,16 @@ def run(root, pipeline, source, resume=None, on_job=None, control=None, preview=
             state['stages'][s['id']]={'status':'running','started_at':time.time()}; save(state_path,state)
             try:
                 logger.info('START %s input=%s',s['id'],src)
+                record(root,'stage_start',job=job.name,preset=pipeline['name'],stage=s['id'],model=s['model'])
+                stage_started=time.monotonic()
                 files=execute(root,s,src,target,folder)
                 state['stages'][s['id']]={'status':'completed','output':str(target),'files':{str(p):digest(p) for p in files}}
                 previous=target
                 state['stages'][s['id']]['finished_at']=time.time()
                 logger.info('DONE %s',s['id'])
+                record(root,'stage_completed',job=job.name,stage=s['id'],model=s['model'],duration=time.monotonic()-stage_started)
             except Exception as e:
+                record(root,'stage_failed',job=job.name,stage=s['id'],model=s['model'],error=str(e))
                 logger.exception('FAILED %s',s['id'])
                 state['stages'][s['id']]={'status':'optional_failed' if s['optional'] else 'failed','error':str(e)}
                 save(state_path,state)

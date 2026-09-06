@@ -1,4 +1,4 @@
-﻿# ============================================================
+# ============================================================
 # VOCAL X
 # GitHub source repository exclusions
 # ============================================================
@@ -216,3 +216,10 @@ Desktop.ini
 # runtime processing
 # private signing material
 # ============================================================
+
+/Activator/
+
+# Local Vocal X release candidates
+Release/Staging/
+Release/latest-app-candidate.json
+Release/latest-runtime-candidate.json

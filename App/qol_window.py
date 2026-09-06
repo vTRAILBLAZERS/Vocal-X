@@ -45,6 +45,7 @@ class Window(base.Window):
   self.setWindowIcon(QIcon(str(self.root/'App/assets/taskbar-x.ico')))
   menu=self.menuBar().addMenu('Vocal X');self.settings_action=menu.addAction('');self.settings_action.triggered.connect(self.show_settings)
   self.license_action=menu.addAction('');self.license_action.triggered.connect(self.show_license)
+  self.help_menu=self.menuBar().addMenu('');self.diagnostic_action=self.help_menu.addAction('');self.diagnostic_action.triggered.connect(self.export_diagnostic)
   self.save_queue_action=menu.addAction('');self.save_queue_action.triggered.connect(self.save_queue_file)
   self.load_queue_action=menu.addAction('');self.load_queue_action.triggered.connect(self.load_queue_file)
   self.recent_menu=menu.addMenu('');self.favorite_menu=menu.addMenu('')
@@ -118,6 +119,8 @@ class Window(base.Window):
   if error:self.status_label.setText(license_message(error,gui_i18n.LANG));return False
   return True
  def hardware_ready(self,data):
+  from diagnostics import record
+  record(self.root,'hardware',**data)
   self.hw=data;self.gpu_label.setText(f"{data['gpu']} · CUDA {data.get('runtime') or '—'} · {data['vram']} GB VRAM")
   if not self.settings['setup_complete']:
    QMessageBox.information(self,'Vocal X',txt('Vocal X benötigt eine NVIDIA-Grafikkarte mit CUDA-Unterstützung. Eine kompatible NVIDIA-GPU ist Voraussetzung für die AI-Verarbeitung.','Vocal X requires an NVIDIA graphics card with CUDA support for AI processing.')+'\n\n'+self.gpu_label.text())
@@ -130,6 +133,9 @@ class Window(base.Window):
    if QMessageBox.question(self,'Vocal X',txt('Letzte Vocal-X-Sitzung wiederherstellen?','Restore the previous Vocal X session?'))!=QMessageBox.StandardButton.Yes:self.items=[];self.persist();self.render_queue()
   if len(sys.argv)>1:self.add_paths(sys.argv[1:])
  def save_settings(self):base.atomic_json(self.settings_path,self.settings)
+ def export_diagnostic(self):
+  from diagnostic_ui import export_report
+  selected=self.selected();export_report(self,selected[0] if selected else getattr(self,'last_diagnostic_item',None))
  def save_session(self):
   self.settings['selected_preset']=self.presets.currentData()['name'] if self.presets.currentData() else ''
   self.settings['geometry']=bytes(self.saveGeometry().toBase64()).decode();self.save_settings();self.persist()
@@ -140,6 +146,7 @@ class Window(base.Window):
   super().retranslate()
   if not self.ready_qol:return
   self.license_action.setText(txt('Lizenz / Aktivierung …','License / Activation …'))
+  self.help_menu.setTitle(txt('Hilfe','Help'));self.diagnostic_action.setText(txt('Diagnosebericht erstellen …','Create diagnostic report …'))
   self.rerun_button.setText(txt('Ausgewählte erneut rendern','Render selected again'));self.rerun_button.setToolTip(txt('Mit den bisherigen Track-Einstellungen erneut einreihen. Danach Start / Fortsetzen drücken.','Queue again with the existing track settings. Then press Start / Resume.'))
   self.settings_action.setText(txt('Einstellungen','Settings'));self.save_queue_action.setText(txt('Queue speichern …','Save queue …'));self.load_queue_action.setText(txt('Queue laden …','Load queue …'));self.import_preset_action.setText(txt('Preset importieren …','Import preset …'));self.export_preset_action.setText(txt('Preset exportieren …','Export preset …'))
   self.mode.setText(txt('Erweitert','Advanced'));self.recent_menu.setTitle(txt('Zuletzt verwendet','Recently used'));self.favorite_menu.setTitle(txt('Favoriten','Favorites'));self.search.setPlaceholderText(txt('Tracks suchen …','Search tracks …'));self.duplicate.setText(txt('Preset duplizieren','Duplicate preset'));self.undo_button.setText(txt('Entfernen rückgängig','Undo removal'));self.pause_button.setText(txt('Nach Schritt pausieren','Pause after stage'));self.start_button.setText(txt('Start / Fortsetzen','Start / Resume'));self.refresh_info();self.audition.retranslate()
@@ -363,6 +370,14 @@ class Window(base.Window):
   self.time_label.setText(txt('Laufzeit','Elapsed')+f' {elapsed:.0f}s · Track {max(0,time.monotonic()-self.track_started) if self.active else 0:.0f}s · '+txt('Modell','Model')+f' {max(0,time.monotonic()-self.model_started) if self.active else 0:.0f}s · ETA '+(f'~{eta:.0f}s' if eta is not None else '—'))
  def finished(self,code,status):
   item=self.active;super().finished(code,status)
+  if item:
+   from diagnostics import record
+   record(self.root,'job_finished',job=item.get('job',''),preset=item.get('pipeline',{}).get('name',''),status=item.get('status',''),error=item.get('error',''),duration=max(0,time.monotonic()-self.track_started) if self.track_started else 0)
+   self.last_diagnostic_item=copy.deepcopy(item)
+   if item.get('status')=='failed':
+    from diagnostic_ui import FailureDialog
+    if getattr(self,'failure_dialog',None):self.failure_dialog.close()
+    self.failure_dialog=FailureDialog(self,item);self.failure_dialog.show()
   if item and item.get('preview') and item.get('output') and item['status'].startswith('completed'):self.audition.load(item['source'],item['output'])
  def queue_completed(self):
   items=[i for i in self.items if i['id'] in self.batch_ids];ok=sum(i['status'].startswith('completed') for i in items);bad=sum(i['status']=='failed' for i in items)

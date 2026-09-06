@@ -6,7 +6,7 @@ $Failures = 0
 $LogDir = Join-Path $Root ('Temp\Beta-Check-' + [guid]::NewGuid().ToString('N'))
 try {
  New-Item -ItemType Directory -Path $LogDir -Force | Out-Null
- foreach ($Name in @('test_activation.py','test_portability.py','test_license.py','test_pipeline.py','test_restoration.py','test_anyenhance_full.py','test_gui_branding.py','test_qol_core.py','test_qol_gui.py')) {
+ foreach ($Name in @('test_diagnostics.py','test_activation.py','test_portability.py','test_license.py','test_pipeline.py','test_restoration.py','test_anyenhance_full.py','test_gui_branding.py','test_qol_core.py','test_qol_gui.py')) {
   $Log = Join-Path $LogDir ($Name + '.log')
   $ErrorActionPreference = 'Continue'
   & $Py -X utf8 (Join-Path $Root ('App\' + $Name)) *> $Log

@@ -60,9 +60,10 @@ def publish(root,job,state):
   if len(finals)!=1:raise ValueError('Expected one final WAV')
   final.parent.mkdir(exist_ok=True)
   existing=list(final.parent.iterdir())
+  final_sidecar=Path(str(final)+'.asd')
   for old in existing:
    if not old.is_file() or old.resolve()==source:raise ValueError('Protected original or directory in Final folder: '+str(old))
-   if str(old.resolve()) not in known and old!=final:
+   if str(old.resolve()) not in known and old!=final and old!=final_sidecar:
     if not re.search(r'__[0-9a-f]{32}\.wav(?:\.asd)?$',old.name,re.I):raise ValueError('Unrecognized file in Final folder; preserve it outside Final: '+str(old))
    if old==final and str(old.resolve()) not in known:raise ValueError('Unrecognized existing final; original protection: '+str(old))
   # Check sharing locks before moving any existing final file.
