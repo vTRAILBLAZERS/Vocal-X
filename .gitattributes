@@ -1,0 +1,7 @@
+# ============================================================
+# VOCAL X - Git attributes
+# ============================================================
+
+# Git hooks / shell scripts must use Unix LF line endings.
+.githooks/* text eol=lf
+*.sh text eol=lf

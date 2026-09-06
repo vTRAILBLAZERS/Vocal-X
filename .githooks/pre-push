@@ -1,0 +1,48 @@
+#!/bin/sh
+
+# ============================================================
+# VOCAL X - MAIN BRANCH PUSH GUARD
+# ============================================================
+#
+# Blocks direct pushes to refs/heads/main.
+#
+# Normal development:
+#   feature/* -> develop -> Pull Request -> main
+#
+# Emergency/manual release override:
+#   VOCALX_ALLOW_MAIN_PUSH=YES
+#
+# ============================================================
+
+allow_main_push="${VOCALX_ALLOW_MAIN_PUSH:-NO}"
+
+while read local_ref local_sha remote_ref remote_sha
+do
+    if [ "$remote_ref" = "refs/heads/main" ]; then
+
+        if [ "$allow_main_push" != "YES" ]; then
+
+            echo ""
+            echo "============================================================"
+            echo " VOCAL X - MAIN PUSH BLOCKED"
+            echo "============================================================"
+            echo ""
+            echo "Direct pushes to main are disabled."
+            echo ""
+            echo "Normal workflow:"
+            echo "  feature/* -> develop -> Pull Request -> main"
+            echo ""
+            echo "No data was pushed to main."
+            echo ""
+
+            exit 1
+        fi
+
+        echo ""
+        echo "[VOCAL X] Explicit main-push override detected."
+        echo "[VOCAL X] Main push allowed for this command."
+        echo ""
+    fi
+done
+
+exit 0
