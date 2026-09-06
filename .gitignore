@@ -122,7 +122,6 @@ __pycache__/
 
 /Release/Build/
 /Release/Dist/
-/Release/Installer/
 /Release/Installer-Output/
 
 /build/
@@ -223,3 +222,6 @@ Desktop.ini
 Release/Staging/
 Release/latest-app-candidate.json
 Release/latest-runtime-candidate.json
+
+# Locally built Vocal X installers
+/Release/Installer/Output/
